@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+:root {
+    --background-color: #f53172;
+    --text-color: #241c4f;
+}
+
+.app-container {
+    background-color: var(--background-color);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.icon-card {
+    border: 2px solid var(--text-color);
+    display: flex;
+    margin: auto;
+    margin: 10px 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.icon {
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.icon-card-description {
+    font-family: Roboto;
+    color: var(--text-color);
+    font-size: 8px;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
+.profile-heading-card {
+    border-right: 2px solid var(--text-color);
+}
+
+.profile-heading {
+    font-family: Roboto;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px 10px 0;
+}
+
+.profile-subheading {
+    font-family: Roboto;
+    color: var(--text-color);
+    font-size: 8px;
+    margin: 0 0 10px 0;
+}
+
+.profile-description {
+    font-family: Roboto;
+    color: var(--text-color);
+    font-size: 8px;
+    margin: 0 0 5px 0;
+}
+
+.break-line {
+    border: 1px solid var(--text-color);
+    opacity: .8;
+}
+
+.work-card {
+    list-style: none;
+    margin: 0 0 10px 0;
+}
+
+.work-year,
+.award-year,
+.education-year {
+    font-family: Roboto;
+    color: var(--text-color);
+    font-size: 8px;
+    margin: 0 15px 0 0;
+}
+
+.work-description,
+.award-description,
+.education-description {
+    font-family: Roboto;
+    color: var(--text-color);
+    font-size: 8px;
+    margin: 0;
+}
+
+.skill-card,
+.award-card {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.skill-name {
+    font-family: Roboto;
+    color: var(--text-color);
+    font-size: 7px;
+    margin: 0;
+    width: 40%;
+}
+
+.skill-rating-card {
+    padding: 0;
+    margin: 0 0 0 5px;
+    list-style: none;
+    width: 60%;
+    flex-grow: 1;
+}
+
+.skill-rating {
+    width: 5px;
+    height: 5px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.interests-item {
+    margin: 0 3px;
+}
+
+.interests-card {
+    background-color: var(--text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.icons {
+    font-size: 20px;
+    color: var(--background-color);
+}
+
+.interests-card-description {
+    font-family: Roboto;
+    font-weight: 500;
+    color: #241c4f;
+    font-size: 8px;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+
+    .icon-card,
+    .interests-card {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+
+    .icon-card-description {
+        font-size: 10px;
+    }
+
+    .profile-heading {
+        font-size: 20px;
+    }
+
+    .profile-subheading,
+    .profile-description,
+    .work-year,
+    .award-year,
+    .education-year,
+    .work-description,
+    .award-description,
+    .education-description,
+    .skill-name,
+    .interests-card-description {
+        font-size: 10px;
+    }
+
+    .skill-rating {
+        width: 10px;
+        height: 10px;
+    }
+
+    .icons {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .profile-heading {
+        font-size: 30px;
+    }
+
+    .profile-subheading,
+    .work-description,
+    .award-description,
+    .education-description {
+        font-size: 14px;
+    }
+
+    .profile-description,
+    .work-year,
+    .award-year,
+    .education-year {
+        font-size: 12px;
+    }
+
+    .skill-name {
+        font-size: 10px;
+        width: 30%;
+    }
+
+    .skill-rating {
+        height: 15px;
+        width: 15px;
+    }
+
+    .interests-item {
+        margin: 0 30px;
+    }
+}
