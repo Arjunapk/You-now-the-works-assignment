@@ -210,6 +210,10 @@
         font-size: 12px;
     }
 
+    .work-year {
+        width: 200px;
+    }
+
     .skill-name {
         font-size: 10px;
         width: 30%;
